@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 Route::group(['namespace' => 'Home'], function(){
    Route::get('home/test','TestController@index');
+   Route::get('home/service','ServiceController@index');
 
 });
