@@ -20,3 +20,28 @@ Route::group(['namespace' => 'Home'], function(){
    Route::get('home/facade','TestFacadeController@index');
 
 });
+Route::get('testViewHello',function(){
+	return view('hello');
+});
+
+Route::get('testViewHome',function(){
+	return view('home');
+});
+
+Route::group(['middleware'=>'test'],function(){
+	Route::get('/write/user',function(){
+
+	});
+	Route::get('/update/user',function(){
+
+	});
+
+});
+
+Route::get('/age/refuse',['as'=>'refuse',function(){
+	echo '未成年人精致入内';
+}]);
+
+Route::group(['prefix'=>'Admin','namespace' => 'Admin','middleware'=>'test'],function(){
+	Route::get('test','TestController@index');
+});
