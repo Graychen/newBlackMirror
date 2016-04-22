@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 namespace App\Contracts;
 
-interfact TestContract{
+interface TestContract{
 	public function callMe($controller);
 }
