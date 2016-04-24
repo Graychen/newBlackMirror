@@ -10,6 +10,6 @@ use App\Http\Controllers\Controller;
 class TestController extends Controller
 {
 	public function index(){
-		echo "后台";
+		return view('layouts/child');
 	}
 }

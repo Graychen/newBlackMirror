@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::group(['namespace' => 'Home'], function(){
+/*Route::group(['namespace' => 'Home'], function(){
    Route::get('home/test','TestController@index');
    Route::get('home/service','ServiceController@index');
    Route::get('home/facade','TestFacadeController@index');
@@ -40,8 +40,20 @@ Route::group(['middleware'=>'test'],function(){
 
 Route::get('/age/refuse',['as'=>'refuse',function(){
 	echo '未成年人精致入内';
-}]);
+}]);*/
 
-Route::group(['prefix'=>'Admin','namespace' => 'Admin','middleware'=>'test'],function(){
+Route::group(['prefix'=>'Home','namespace' => 'Home','middleware'=>'test'],function(){
 	Route::get('test','TestController@index');
 });
+
+Route::group(['prefix'=>'Admin','namespace' => 'Admin'],function(){
+	Route::get('test','TestController@index');
+});
+// 认证路由...
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
+// 注册路由...
+Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::post('auth/register', 'Auth\AuthController@postRegister');
+Route::get('/home', 'HomeController@index');
