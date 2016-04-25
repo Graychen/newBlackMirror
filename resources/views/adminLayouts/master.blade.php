@@ -7,654 +7,710 @@
 
     <!-- BOOTSTRAP STYLES-->
     <link href=" {{ asset('admin/css/bootstrap.css') }}" rel="stylesheet" />
-    <!-- FONTAWESOME STYLES-->
-    <link href="{{ asset('admin/css/font-awesome.css') }}" rel="stylesheet" />
-       <!--CUSTOM BASIC STYLES-->
-    <link href="{{ asset('admin/css/basic.css') }}" rel="stylesheet" />
-    <!--CUSTOM MAIN STYLES-->
-    <link href="{{ asset('admin/css/custom.css') }}" rel="stylesheet" />
-    <!-- GOOGLE FONTS-->
-    <link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Novus Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Bootstrap Core CSS -->
+<link href="{{ asset('admin/css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="{{ asset('admin/css/style.css') }}" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+<!-- font-awesome icons -->
+<link href="{{ asset('admin/css/font-awesome.css') }}" rel="stylesheet">
+<!-- //font-awesome icons -->
+ <!-- js-->
+<script src="{{ asset('admin/js/jquery-1.11.1.min.js') }}"></script>
+<script src="{{ asset('admin/js/modernizr.custom.js') }}"></script>
+<!--webfonts-->
+<link href='http://fonts.useso.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+    <script>
+         new WOW().init();
+    </script>
+<!--//end-animate-->
+<!-- chart -->
+<script src="js/Chart.js"></script>
+<!-- //chart -->
+<!--Calender-->
+<link rel="stylesheet" href="css/clndr.css" type="text/css" />
+<script src="js/underscore-min.js" type="text/javascript"></script>
+<script src= "js/moment-2.2.1.js" type="text/javascript"></script>
+<script src="js/clndr.js" type="text/javascript"></script>
+<script src="js/site.js" type="text/javascript"></script>
+<!--End Calender-->
+<!-- Metis Menu -->
+<script src="js/metisMenu.min.js"></script>
+<script src="js/custom.js"></script>
+<link href="css/custom.css" rel="stylesheet">
+<!--//Metis Menu -->
 </head>
-<body>
-    <div id="wrapper">
-        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">COMPANY NAME</a>
+<body class="cbp-spmenu-push">
+    <div class="main-content">
+        <!--left-fixed -navigation-->
+        <div class=" sidebar" role="navigation">
+            <div class="navbar-collapse">
+                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html" class="active"><i class="fa fa-home nav_icon"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-cogs nav_icon"></i>Components <span class="nav-badge">12</span> <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="grids.html">Grid System</a>
+                                </li>
+                                <li>
+                                    <a href="media.html">Media Objects</a>
+                                </li>
+                            </ul>
+                            <!-- /nav-second-level -->
+                        </li>
+                        <li class="">
+                            <a href="#"><i class="fa fa-book nav_icon"></i>UI Elements <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="general.html">General<span class="nav-badge-btm">08</span></a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">Typography</a>
+                                </li>
+                            </ul>
+                            <!-- /nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="widgets.html"><i class="fa fa-th-large nav_icon"></i>Widgets <span class="nav-badge-btm">08</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope nav_icon"></i>Mailbox<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="inbox.html">Inbox <span class="nav-badge-btm">05</span></a>
+                                </li>
+                                <li>
+                                    <a href="compose.html">Compose email</a>
+                                </li>
+                            </ul>
+                            <!-- //nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="tables.html"><i class="fa fa-table nav_icon"></i>Tables <span class="nav-badge">05</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-check-square-o nav_icon"></i>Forms<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="forms.html">Basic Forms <span class="nav-badge-btm">07</span></a>
+                                </li>
+                                <li>
+                                    <a href="validation.html">Validation</a>
+                                </li>
+                            </ul>
+                            <!-- //nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-file-text-o nav_icon"></i>Pages<span class="nav-badge-btm">02</span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="login.html">Login</a>
+                                </li>
+                                <li>
+                                    <a href="signup.html">SignUp</a>
+                                </li>
+                                <li>
+                                    <a href="blank-page.html">Blank Page</a>
+                                </li>
+                            </ul>
+                            <!-- //nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="charts.html" class="chart-nav"><i class="fa fa-bar-chart nav_icon"></i>Charts <span class="nav-badge-btm pull-right">new</span></a>
+                        </li>
+                    </ul>
+                    <!-- //sidebar-collapse -->
+                </nav>
             </div>
-
-            <div class="header-right">
-
-                <a href="message-task.html" class="btn btn-info" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
-                <a href="message-task.html" class="btn btn-primary" title="New Task"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>
-                <a href="login.html" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
-
-            </div>
-        </nav>
-        <!-- /. NAV TOP  -->
-        <nav class="navbar-default navbar-side" role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav" id="main-menu">
-                    <li>
-                        <div class="user-img-div">
-                            <img src="assets/img/user.png" class="img-thumbnail" />
-
-                            <div class="inner-text">
-                                Jhon Deo Alex
-                            <br />
-                                <small>Last Login : 2 Weeks Ago </small>
-                            </div>
-                        </div>
-
-                    </li>
-
-
-                    <li>
-                        <a class="active-menu" href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-desktop "></i>UI Elements <span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level">
-                            <li>
-                                <a href="panel-tabs.html"><i class="fa fa-toggle-on"></i>Tabs & Panels</a>
-                            </li>
-                            <li>
-                                <a href="notification.html"><i class="fa fa-bell "></i>Notifications</a>
-                            </li>
-                             <li>
-                                <a href="progress.html"><i class="fa fa-circle-o "></i>Progressbars</a>
-                            </li>
-                             <li>
-                                <a href="buttons.html"><i class="fa fa-code "></i>Buttons</a>
-                            </li>
-                             <li>
-                                <a href="icons.html"><i class="fa fa-bug "></i>Icons</a>
-                            </li>
-                             <li>
-                                <a href="wizard.html"><i class="fa fa-bug "></i>Wizard</a>
-                            </li>
-                             <li>
-                                <a href="typography.html"><i class="fa fa-edit "></i>Typography</a>
-                            </li>
-                             <li>
-                                <a href="grid.html"><i class="fa fa-eyedropper "></i>Grid</a>
-                            </li>
-
-
-                        </ul>
-                    </li>
-                     <li>
-                        <a href="#"><i class="fa fa-yelp "></i>Extra Pages <span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level">
-                            <li>
-                                <a href="invoice.html"><i class="fa fa-coffee"></i>Invoice</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html"><i class="fa fa-flash "></i>Pricing</a>
-                            </li>
-                             <li>
-                                <a href="component.html"><i class="fa fa-key "></i>Components</a>
-                            </li>
-                             <li>
-                                <a href="social.html"><i class="fa fa-send "></i>Social</a>
-                            </li>
-
-                             <li>
-                                <a href="message-task.html"><i class="fa fa-recycle "></i>Messages & Tasks</a>
-                            </li>
-
-
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="table.html"><i class="fa fa-flash "></i>Data Tables </a>
-
-                    </li>
-                     <li>
-                        <a href="#"><i class="fa fa-bicycle "></i>Forms <span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level">
-
-                             <li>
-                                <a href="form.html"><i class="fa fa-desktop "></i>Basic </a>
-                            </li>
-                             <li>
-                                <a href="form-advance.html"><i class="fa fa-code "></i>Advance</a>
-                            </li>
-
-
-                        </ul>
-                    </li>
-                      <li>
-                        <a href="gallery.html"><i class="fa fa-anchor "></i>Gallery</a>
-                    </li>
-                     <li>
-                        <a href="error.html"><i class="fa fa-bug "></i>Error Page</a>
-                    </li>
-                    <li>
-                        <a href="login.html"><i class="fa fa-sign-in "></i>Login Page</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap "></i>Multilevel Link <span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level">
-                            <li>
-                                <a href="#"><i class="fa fa-bicycle "></i>Second Level Link</a>
-                            </li>
-                             <li>
-                                <a href="#"><i class="fa fa-flask "></i>Second Level Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level Link<span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="#"><i class="fa fa-plus "></i>Third Level Link</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-comments-o "></i>Third Level Link</a>
-                                    </li>
-
-                                </ul>
-
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="blank.html"><i class="fa fa-square-o "></i>Blank Page</a>
-                    </li>
-                </ul>
-
-            </div>
-
-        </nav>
-        <!-- /. NAV SIDE  -->
-        <div id="page-wrapper">
-            <div id="page-inner">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="page-head-line">DASHBOARD</h1>
-                        <h1 class="page-subhead-line">This is dummy text , you can replace it with your original text. </h1>
-
-                    </div>
-                </div>
-                <!-- /. ROW  -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="main-box mb-red">
-                            <a href="#">
-                                <i class="fa fa-bolt fa-5x"></i>
-                                <h5>Zero Issues</h5>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="main-box mb-dull">
-                            <a href="#">
-                                <i class="fa fa-plug fa-5x"></i>
-                                <h5>40 Task In Check</h5>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="main-box mb-pink">
-                            <a href="#">
-                                <i class="fa fa-dollar fa-5x"></i>
-                                <h5>200K Pending</h5>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- /. ROW  -->
-
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-12">
-
-                                <div id="reviews" class="carousel slide" data-ride="carousel">
-
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-
-                                            <div class="col-md-10 col-md-offset-1">
-
-                                                <h4><i class="fa fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. <i class="fa fa-quote-right"></i></h4>
-                                                <div class="user-img pull-right">
-                                                    <img src="assets/img/user.gif" alt="" class="img-u image-responsive" />
-                                                </div>
-                                                <h5 class="pull-right"><strong class="c-black">Lorem Dolor</strong></h5>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="col-md-10 col-md-offset-1">
-
-                                                <h4><i class="fa fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. <i class="fa fa-quote-right"></i></h4>
-                                                <div class="user-img pull-right">
-                                                    <img src="assets/img/user.png" alt="" class="img-u image-responsive" />
-                                                </div>
-                                                <h5 class="pull-right"><strong class="c-black">Lorem Dolor</strong></h5>
-                                            </div>
-
-                                        </div>
-                                        <div class="item">
-                                            <div class="col-md-10 col-md-offset-1">
-
-                                                <h4><i class="fa fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing  Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. <i class="fa fa-quote-right"></i></h4>
-                                                <div class="user-img pull-right">
-                                                    <img src="assets/img/user.gif" alt="" class="img-u image-responsive" />
-                                                </div>
-                                                <h5 class="pull-right"><strong class="c-black">Lorem Dolor</strong></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--INDICATORS-->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#reviews" data-slide-to="0" class="active"></li>
-                                        <li data-target="#reviews" data-slide-to="1"></li>
-                                        <li data-target="#reviews" data-slide-to="2"></li>
-                                    </ol>
-                                    <!--PREVIUS-NEXT BUTTONS-->
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- /. ROW  -->
-                        <hr />
-
-                        <div class="panel panel-default">
-
-                            <div id="carousel-example" class="carousel slide" data-ride="carousel" style="border: 5px solid #000;">
-
-                                <div class="carousel-inner">
-                                    <div class="item active">
-
-                                        <img src="assets/img/slideshow/1.jpg" alt="" />
-
-                                    </div>
-                                    <div class="item">
-                                        <img src="assets/img/slideshow/2.jpg" alt="" />
-
-                                    </div>
-                                    <div class="item">
-                                        <img src="assets/img/slideshow/3.jpg" alt="" />
-
-                                    </div>
-                                </div>
-                                <!--INDICATORS-->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example" data-slide-to="2"></li>
-                                </ol>
-                                <!--PREVIUS-NEXT BUTTONS-->
-                                <a class="left carousel-control" href="#carousel-example" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-                                <a class="right carousel-control" href="#carousel-example" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.REVIEWS &  SLIDESHOW  -->
-                    <div class="col-md-4">
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                Recent Chat History
-                            </div>
-                            <div class="panel-body" style="padding: 0px;">
-                                <div class="chat-widget-main">
-
-
-                                    <div class="chat-widget-left">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </div>
-                                    <div class="chat-widget-name-left">
-                                        <h4>Amanna Seiar</h4>
-                                    </div>
-                                    <div class="chat-widget-right">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </div>
-                                    <div class="chat-widget-name-right">
-                                        <h4>Donim Cruseia </h4>
-                                    </div>
-                                    <div class="chat-widget-left">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </div>
-                                    <div class="chat-widget-name-left">
-                                        <h4>Amanna Seiar</h4>
-                                    </div>
-                                    <div class="chat-widget-right">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </div>
-                                    <div class="chat-widget-name-right">
-                                        <h4>Donim Cruseia </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel-footer">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Enter Message" />
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-success" type="button">SEND</button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <!--/.Chat Panel End-->
-                </div>
-                <!-- /. ROW  -->
-
-
-                <div class="row">
-
-                    <div class="col-md-8">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item active">
-                                <h4 class="list-group-item-heading">LIST GROUP HEADING</h4>
-                                <p class="list-group-item-text" style="line-height: 30px;">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </a>
-                        </div>
-                        <br />
-                        <!-- 16:9 aspect ratio -->
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <i class="fa fa-bell fa-fw"></i>Notifications Panel
-                            </div>
-
-                            <div class="panel-body">
-                                <div class="list-group">
-
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-twitter fa-fw"></i>3 New Followers
-                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                                    </span>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-envelope fa-fw"></i>Message Sent
-                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
-                                    </span>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-tasks fa-fw"></i>New Task
-                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
-                                    </span>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-upload fa-fw"></i>Server Rebooted
-                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
-                                    </span>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-bolt fa-fw"></i>Server Crashed!
-                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
-                                    </span>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-warning fa-fw"></i>Server Not Responding
-                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
-                                    </span>
-                                    </a>
-
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-bolt fa-fw"></i>Server Crashed!
-                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
-                                    </span>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-warning fa-fw"></i>Server Not Responding
-                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
-                                    </span>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="fa fa-shopping-cart fa-fw"></i>New Order Placed
-                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
-                                    </span>
-                                    </a>
-                                </div>
-                                <!-- /.list-group -->
-                                <a href="#" class="btn btn-info btn-block">View All Alerts</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!--/.Row-->
-                <hr />
-                <div class="row">
-
-                    <div class="col-md-8">
-
-                        <div class="table-responsive">
-                            <table class="table table-striped table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Username</th>
-                                        <th>User No.</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td><span class="label label-danger">Mark</span></td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td><span class="label label-info">100090</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>100090</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Larry</td>
-                                        <td><span class="label label-danger">the Bird</span> </td>
-                                        <td>@twitter</td>
-                                        <td>100090</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td><span class="label label-success">Mark</span></td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td><span class="label label-info">100090</span></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Larry</td>
-                                        <td><span class="label label-primary">the Bird</span></td>
-                                        <td>@twitter</td>
-                                        <td>100090</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td><span class="label label-warning">Jacob</span></td>
-                                        <td><span class="label label-success">Thornton</span></td>
-                                        <td>@fat</td>
-                                        <td><span class="label label-danger">100090</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>Larry</td>
-                                        <td><span class="label label-primary">the Bird</span></td>
-                                        <td>@twitter</td>
-                                        <td>100090</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td><span class="label label-warning">Jacob</span></td>
-                                        <td><span class="label label-success">Thornton</span></td>
-                                        <td>@fat</td>
-                                        <td><span class="label label-danger">100090</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td><span class="label label-success">Mark</span></td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td><span class="label label-info">100090</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-
-
-
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                Recent Comments Example
-                            </div>
-                            <div class="panel-body">
-                                <ul class="media-list">
-
-                                    <li class="media">
-
-                                        <div class="media-body">
-
-                                            <div class="media">
-                                                <a class="pull-left" href="#">
-                                                    <img class="media-object img-circle img-comments" src="assets/img/user.png" />
-                                                </a>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">Nulla gravida vitae  </h4>
-                                                    Donec sit amet ligula enim. Duis vel condimentum massa.
-
-              <!-- Nested media object -->
-                                                    <div class="media">
-                                                        <a class="pull-left" href="#">
-                                                            <img class="media-object img-circle img-comments" src="assets/img/user.gif" />
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <h4 class="media-heading">Amet ligula enim</h4>
-                                                            Donec sit amet ligula enim .
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <a class="pull-left" href="#">
-                                                            <img class="media-object img-circle img-comments" src="assets/img/user.png" />
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <h4 class="media-heading">Donec t ligula enim</h4>
-                                                            Donec sit amet  amet ligula enim .
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/.Row-->
-                <hr />
-                <div class="row" style="padding-bottom: 100px; `">
-                    <div class="col-md-6">
-                        <div id="comments-sec">
-                            <h4><strong>Compose Support Ticket </strong></h4>
-                            <hr />
-
-
-                            <div class="form-group  ">
-                                <label>Please Write a Subject Line</label>
-                                <input type="text" class="form-control" required="required" placeholder="Enter Subject Of Ticket" />
-                            </div>
-                            <div class="form-group ">
-                                <label>Please Enter Issue</label>
-                                <textarea class="form-control" rows="8"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-success">Compose &amp; Send Ticket</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-back noti-box">
-                            <span class="icon-box bg-color-black">
-                                <i class="fa fa-bicycle"></i>
-                            </span>
-                            <div class="text-box">
-                                <p class="main-text">52 Important Issues to Fix </p>
-                                <p>Please fix these issues to work smooth</p>
-                                <p>Time Left: 30 mins</p>
-                                <hr />
-                                <p>
-                                    <span class=" color-bottom-txt"><i class="fa fa-edit"></i>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit gthn.
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit gthn.
-                               Lorem ipsum dolor sit amet, consectetur adipiscing elit gthn.
-
-                                    </span>
-
-
-                                </p>
-                                <hr />
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit gthn.
-                               Lorem ipsum dolor sit amet, consectetur adipiscing elit gthn.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/.ROW-->
-
-            </div>
-            <!-- /. PAGE INNER  -->
         </div>
-        <!-- /. PAGE WRAPPER  -->
+        <!--left-fixed -navigation-->
+        <!-- header-starts -->
+        <div class="sticky-header header-section ">
+            <div class="header-left">
+                <!--toggle button start-->
+                <button id="showLeftPush"><i class="fa fa-bars"></i></button>
+                <!--toggle button end-->
+                <!--logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>NOVUS</h1>
+                        <span>AdminPanel</span>
+                    </a>
+                </div>
+                <!--//logo-->
+                <!--search-box-->
+                <div class="search-box">
+                    <form class="input">
+                        <input class="sb-search-input input__field--madoka" placeholder="Search..." type="search" id="input-31" />
+                        <label class="input__label" for="input-31">
+                            <svg class="graphic" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none">
+                                <path d="m0,0l404,0l0,77l-404,0l0,-77z"/>
+                            </svg>
+                        </label>
+                    </form>
+                </div><!--//end-search-box-->
+                <div class="clearfix"> </div>
+            </div>
+            <div class="header-right">
+                <div class="profile_details_left"><!--notifications of menu start -->
+                    <ul class="nofitications-dropdown">
+                        <li class="dropdown head-dpdn">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-envelope"></i><span class="badge">3</span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="notification_header">
+                                        <h3>You have 3 new messages</h3>
+                                    </div>
+                                </li>
+                                <li><a href="#">
+                                   <div class="user_img"><img src="images/1.png" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Lorem ipsum dolor amet</p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                   <div class="clearfix"></div>
+                                </a></li>
+                                <li class="odd"><a href="#">
+                                    <div class="user_img"><img src="images/2.png" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Lorem ipsum dolor amet </p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                  <div class="clearfix"></div>
+                                </a></li>
+                                <li><a href="#">
+                                   <div class="user_img"><img src="images/3.png" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Lorem ipsum dolor amet </p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                   <div class="clearfix"></div>
+                                </a></li>
+                                <li>
+                                    <div class="notification_bottom">
+                                        <a href="#">See all messages</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown head-dpdn">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell"></i><span class="badge blue">3</span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="notification_header">
+                                        <h3>You have 3 new notification</h3>
+                                    </div>
+                                </li>
+                                <li><a href="#">
+                                    <div class="user_img"><img src="images/2.png" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Lorem ipsum dolor amet</p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                  <div class="clearfix"></div>
+                                 </a></li>
+                                 <li class="odd"><a href="#">
+                                    <div class="user_img"><img src="images/1.png" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Lorem ipsum dolor amet </p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                   <div class="clearfix"></div>
+                                 </a></li>
+                                 <li><a href="#">
+                                    <div class="user_img"><img src="images/3.png" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Lorem ipsum dolor amet </p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                   <div class="clearfix"></div>
+                                 </a></li>
+                                 <li>
+                                    <div class="notification_bottom">
+                                        <a href="#">See all notifications</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown head-dpdn">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-tasks"></i><span class="badge blue1">15</span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="notification_header">
+                                        <h3>You have 8 pending task</h3>
+                                    </div>
+                                </li>
+                                <li><a href="#">
+                                    <div class="task-info">
+                                        <span class="task-desc">Database update</span><span class="percentage">40%</span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="progress progress-striped active">
+                                        <div class="bar yellow" style="width:40%;"></div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="task-info">
+                                        <span class="task-desc">Dashboard done</span><span class="percentage">90%</span>
+                                       <div class="clearfix"></div>
+                                    </div>
+                                    <div class="progress progress-striped active">
+                                         <div class="bar green" style="width:90%;"></div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="task-info">
+                                        <span class="task-desc">Mobile App</span><span class="percentage">33%</span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                   <div class="progress progress-striped active">
+                                         <div class="bar red" style="width: 33%;"></div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="task-info">
+                                        <span class="task-desc">Issues fixed</span><span class="percentage">80%</span>
+                                       <div class="clearfix"></div>
+                                    </div>
+                                    <div class="progress progress-striped active">
+                                         <div class="bar  blue" style="width: 80%;"></div>
+                                    </div>
+                                </a></li>
+                                <li>
+                                    <div class="notification_bottom">
+                                        <a href="#">See all pending tasks</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                </div>
+                <!--notification menu end -->
+                <div class="profile_details">
+                    <ul>
+                        <li class="dropdown profile_details_drop">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="profile_img">
+                                    <span class="prfil-img"><img src="images/a.png" alt=""> </span>
+                                    <div class="user-name">
+                                        <p>Wikolia</p>
+                                        <span>Administrator</span>
+                                    </div>
+                                    <i class="fa fa-angle-down lnr"></i>
+                                    <i class="fa fa-angle-up lnr"></i>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu drp-mnu">
+                                <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
+                                <li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li>
+                                <li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- //header-ends -->
+        <!-- main content start-->
+        <div id="page-wrapper">
+            <div class="main-page">
+                <div class="row-one">
+                    <div class="col-md-4 widget">
+                        <div class="stats-left ">
+                            <h5>Today</h5>
+                            <h4>Sales</h4>
+                        </div>
+                        <div class="stats-right">
+                            <label> 45</label>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-4 widget states-mdl">
+                        <div class="stats-left">
+                            <h5>Today</h5>
+                            <h4>Visitors</h4>
+                        </div>
+                        <div class="stats-right">
+                            <label> 80</label>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-4 widget states-last">
+                        <div class="stats-left">
+                            <h5>Today</h5>
+                            <h4>Orders</h4>
+                        </div>
+                        <div class="stats-right">
+                            <label>51</label>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="charts">
+                    <div class="col-md-4 charts-grids widget">
+                        <h4 class="title">Bar Chart Example</h4>
+                        <canvas id="bar" height="300" width="400"> </canvas>
+                    </div>
+                    <div class="col-md-4 charts-grids widget states-mdl">
+                        <h4 class="title">Line Chart Example</h4>
+                        <canvas id="line" height="300" width="400"> </canvas>
+                    </div>
+                    <div class="col-md-4 charts-grids widget">
+                        <h4 class="title">Pie Chart Example</h4>
+                        <canvas id="pie" height="300" width="400"> </canvas>
+                    </div>
+                    <div class="clearfix"> </div>
+                             <script>
+                                var barChartData = {
+                                    labels : ["Jan","Feb","March","April","May","June","July"],
+                                    datasets : [
+                                        {
+                                            fillColor : "rgba(233, 78, 2, 0.9)",
+                                            strokeColor : "rgba(233, 78, 2, 0.9)",
+                                            highlightFill: "#e94e02",
+                                            highlightStroke: "#e94e02",
+                                            data : [65,59,90,81,56,55,40]
+                                        },
+                                        {
+                                            fillColor : "rgba(79, 82, 186, 0.9)",
+                                            strokeColor : "rgba(79, 82, 186, 0.9)",
+                                            highlightFill: "#4F52BA",
+                                            highlightStroke: "#4F52BA",
+                                            data : [40,70,55,20,45,70,60]
+                                        }
+                                    ]
+
+                                };
+                                var lineChartData = {
+                                    labels : ["Jan","Feb","March","April","May","June","July"],
+                                    datasets : [
+                                        {
+                                            fillColor : "rgba(242, 179, 63, 1)",
+                                            strokeColor : "#F2B33F",
+                                            pointColor : "rgba(242, 179, 63, 1)",
+                                            pointStrokeColor : "#fff",
+                                            data : [70,60,72,61,75,59,80]
+
+                                        },
+                                        {
+                                            fillColor : "rgba(97, 100, 193, 1)",
+                                            strokeColor : "#6164C1",
+                                            pointColor : "rgba(97, 100, 193,1)",
+                                            pointStrokeColor : "#9358ac",
+                                            data : [50,65,51,67,52,64,50]
+
+                                        }
+                                    ]
+
+                                };
+                                var pieData = [
+                                        {
+                                            value: 90,
+                                            color:"rgba(233, 78, 2, 1)",
+                                            label: "Product 1"
+                                        },
+                                        {
+                                            value : 50,
+                                            color : "rgba(242, 179, 63, 1)",
+                                            label: "Product 2"
+                                        },
+                                        {
+                                            value : 60,
+                                            color : "rgba(88, 88, 88,1)",
+                                            label: "Product 3"
+                                        },
+                                        {
+                                            value : 40,
+                                            color : "rgba(79, 82, 186, 1)",
+                                            label: "Product 4"
+                                        }
+
+                                    ];
+
+                            new Chart(document.getElementById("line").getContext("2d")).Line(lineChartData);
+                            new Chart(document.getElementById("bar").getContext("2d")).Bar(barChartData);
+                            new Chart(document.getElementById("pie").getContext("2d")).Pie(pieData);
+
+                            </script>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4 stats-info widget">
+                        <div class="stats-title">
+                            <h4 class="title">Browser Stats</h4>
+                        </div>
+                        <div class="stats-body">
+                            <ul class="list-unstyled">
+                                <li>GoogleChrome <span class="pull-right">85%</span>
+                                    <div class="progress progress-striped active progress-right">
+                                        <div class="bar green" style="width:85%;"></div>
+                                    </div>
+                                </li>
+                                <li>Firefox <span class="pull-right">35%</span>
+                                    <div class="progress progress-striped active progress-right">
+                                        <div class="bar yellow" style="width:35%;"></div>
+                                    </div>
+                                </li>
+                                <li>Internet Explorer <span class="pull-right">78%</span>
+                                    <div class="progress progress-striped active progress-right">
+                                        <div class="bar red" style="width:78%;"></div>
+                                    </div>
+                                </li>
+                                <li>Safari <span class="pull-right">50%</span>
+                                    <div class="progress progress-striped active progress-right">
+                                        <div class="bar blue" style="width:50%;"></div>
+                                    </div>
+                                </li>
+                                <li>Opera <span class="pull-right">80%</span>
+                                    <div class="progress progress-striped active progress-right">
+                                        <div class="bar light-blue" style="width:80%;"></div>
+                                    </div>
+                                </li>
+                                <li class="last">Others <span class="pull-right">60%</span>
+                                    <div class="progress progress-striped active progress-right">
+                                        <div class="bar orange" style="width:60%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8 stats-info stats-last widget-shadow">
+                        <table class="table stats-table ">
+                            <thead>
+                                <tr>
+                                    <th>S.NO</th>
+                                    <th>PRODUCT</th>
+                                    <th>STATUS</th>
+                                    <th>PROGRESS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Lorem ipsum</td>
+                                    <td><span class="label label-success">In progress</span></td>
+                                    <td><h5>85% <i class="fa fa-level-up"></i></h5></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Aliquam</td>
+                                    <td><span class="label label-warning">New</span></td>
+                                    <td><h5>35% <i class="fa fa-level-up"></i></h5></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Lorem ipsum</td>
+                                    <td><span class="label label-danger">Overdue</span></td>
+                                    <td><h5  class="down">40% <i class="fa fa-level-down"></i></h5></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Aliquam</td>
+                                    <td><span class="label label-info">Out of stock</span></td>
+                                    <td><h5>100% <i class="fa fa-level-up"></i></h5></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Lorem ipsum</td>
+                                    <td><span class="label label-success">In progress</span></td>
+                                    <td><h5 class="down">10% <i class="fa fa-level-down"></i></h5></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Aliquam</td>
+                                    <td><span class="label label-warning">New</span></td>
+                                    <td><h5>38% <i class="fa fa-level-up"></i></h5></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 map widget-shadow">
+                        <h4 class="title">Visitors Map </h4>
+                        <div class="map_container"><div id="vmap" style="width: 100%; height: 354px;"></div></div>
+                        <!--map js-->
+                        <link href="css/jqvmap.css" rel='stylesheet' type='text/css' />
+                        <script src="js/jquery.vmap.js"></script>
+                        <script src="js/jquery.vmap.sampledata.js" type="text/javascript"></script>
+                        <script src="js/jquery.vmap.world.js" type="text/javascript"></script>
+                        <script type="text/javascript">
+                            jQuery(document).ready(function() {
+                                jQuery('#vmap').vectorMap({
+                                    map: 'world_en',
+                                    backgroundColor: '#fff',
+                                    color: '#696565',
+                                    hoverOpacity: 0.8,
+                                    selectedColor: '#696565',
+                                    enableZoom: true,
+                                    showTooltip: true,
+                                    values: sample_data,
+                                    scaleColors: ['#585858', '#696565'],
+                                    normalizeFunction: 'polynomial'
+                                });
+                            });
+                        </script>
+                        <!-- //map js -->
+                    </div>
+                    <div class="col-md-4 social-media widget-shadow">
+                        <div class="wid-social twitter">
+                            <div class="social-icon">
+                                <i class="fa fa-twitter text-light icon-xlg "></i>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="number_counter bold count text-light start_timer counted">3.1 K</h3>
+                                <h4 class="counttype text-light">Tweets</h4>
+                            </div>
+                        </div>
+                        <div class="wid-social google-plus">
+                            <div class="social-icon">
+                                <i class="fa fa-google-plus text-light icon-xlg "></i>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="number_counter bold count text-light start_timer counted">523</h3>
+                                <h4 class="counttype text-light">Circles</h4>
+                            </div>
+                        </div>
+                        <div class="wid-social facebook">
+                            <div class="social-icon">
+                                <i class="fa fa-facebook text-light icon-xlg "></i>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="number_counter bold count text-light start_timer counted">1.06K</h3>
+                                <h4 class="counttype text-light">Likes</h4>
+                            </div>
+                        </div>
+                        <div class="wid-social dribbble">
+                            <div class="social-icon">
+                                <i class="fa fa-dribbble text-light icon-xlg "></i>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="number_counter bold count text-light start_timer counted">1.6 K</h3>
+                                <h4 class="counttype text-light">Subscribers</h4>
+                            </div>
+                        </div>
+                        <div class="wid-social vimeo">
+                            <div class="social-icon">
+                                <i class="fa fa-vimeo-square text-light icon-xlg"> </i>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="number_counter bold count text-light start_timer counted">2.1 m</h3>
+                                <h4 class="counttype text-light">Contacts</h4>
+                            </div>
+                        </div>
+                        <div class="wid-social xing">
+                            <div class="social-icon">
+                                <i class="fa fa-xing text-light icon-xlg "></i>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="number_counter bold count text-light start_timer counted">2525</h3>
+                                <h4 class="counttype text-light">Connections</h4>
+                            </div>
+                        </div>
+                        <div class="wid-social flickr">
+                            <div class="social-icon">
+                                <i class="fa fa-android text-light icon-xlg"></i>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="number_counter bold count text-light start_timer counted">1221</h3>
+                                <h4 class="counttype text-light">Media</h4>
+                            </div>
+                        </div>
+                        <div class="wid-social yahoo">
+                            <div class="social-icon">
+                                <i class="fa fa-yahoo text-light icon-xlg"> Y!</i>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="number_counter bold count text-light start_timer counted">2525</h3>
+                                <h4 class="counttype text-light">Connections</h4>
+                            </div>
+                        </div>
+                        <div class="wid-social rss">
+                            <div class="social-icon">
+                                <i class="fa fa-rss text-light icon-xlg"></i>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="number_counter bold count text-light start_timer counted">1523</h3>
+                                <h4 class="counttype text-light">Subscribers</h4>
+                            </div>
+                        </div>
+                        <div class="wid-social youtube">
+                            <div class="social-icon">
+                                <i class="fa fa-youtube text-light icon-xlg"></i>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="number_counter bold count text-light start_timer counted">1523</h3>
+                                <h4 class="counttype text-light">Subscribers</h4>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="row calender widget-shadow">
+                    <h4 class="title">Calender</h4>
+                    <div class="cal1">
+
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+           <p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+        </div>
+        <!--//footer-->
     </div>
-    <!-- /. WRAPPER  -->
+    <!-- Classie -->
+        <script src="js/classie.js"></script>
+        <script>
+            var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+                showLeftPush = document.getElementById( 'showLeftPush' ),
+                body = document.body;
 
-    <div id="footer-sec">
-        Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
-    </div>
-    <!-- /. FOOTER  -->
-    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-    <!-- JQUERY SCRIPTS -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP SCRIPTS -->
-    <script src="assets/js/bootstrap.js"></script>
-    <!-- METISMENU SCRIPTS -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
-       <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
+            showLeftPush.onclick = function() {
+                classie.toggle( this, 'active' );
+                classie.toggle( body, 'cbp-spmenu-push-toright' );
+                classie.toggle( menuLeft, 'cbp-spmenu-open' );
+                disableOther( 'showLeftPush' );
+            };
 
 
-
+            function disableOther( button ) {
+                if( button !== 'showLeftPush' ) {
+                    classie.toggle( showLeftPush, 'disabled' );
+                }
+            }
+        </script>
+    <!--scrolling js-->
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/scripts.js"></script>
+    <!--//scrolling js-->
+    <!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.js"> </script>
 </body>
 </html>
