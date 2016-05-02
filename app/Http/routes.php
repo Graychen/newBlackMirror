@@ -49,6 +49,11 @@ Route::group(['prefix'=>'Home','namespace' => 'Home','middleware'=>'test'],funct
 Route::group(['prefix'=>'Admin','namespace' => 'Admin'],function(){
 	Route::get('test','TestController@index');
 	Route::get('index','IndexController@index');
+	Route::get('login','UserController@getLogin');
+	Route::post('login','UserController@postLogin');
+	Route::get('logout','UserController@getLogout');
+	Route::get('register','UserController@getRegister');
+	Route::post('register','UserController@postRegister');
 });
 // 认证路由...
 Route::get('login', 'Auth\AuthController@getLogin');
