@@ -12,4 +12,8 @@ class TestController extends Controller
 	public function index(){
 		return view('layouts/child');
 	}
+
+	public function test(){
+		dd('test');
+	}
 }
