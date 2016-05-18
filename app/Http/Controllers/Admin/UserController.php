@@ -5,8 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\ThrottlesLogins;
-use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Http\Request;
 class UserController extends Controller
 {
 	protected $guard = 'admin';
@@ -39,24 +38,14 @@ class UserController extends Controller
 	 * 登录验证
 	 * @return [type] [description]
 	 */
-	public function postLogin(){}
+	public function postLogin(Request $request){
+		//dd($request->input('name'));
+		dd(hash('md5',$request->input('password')));
+	}
 	/**
 	 * 退出登陆
 	 * @return [type] [description]
 	 */
 	public function getLogout(){}
-	/**
-	 * 注册页面
-	 * @return [type] [description]
-	 */
-	public function getRegister(){
-		return view('admin/register');
-	}
-	/**
-	 * 注册过程
-	 * @return [type] [description]
-	 */
-	public function postRegister(){
 
-	}
 }

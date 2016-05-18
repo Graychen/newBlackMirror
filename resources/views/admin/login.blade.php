@@ -1,14 +1,14 @@
-<form method="POST" action="/auth/login">
+<form method="POST" action="login">
     {!! csrf_field() !!}
 
     <div>
-        Email
-        <input type="email" name="email" value="{{ old('email') }}">
+         用户名
+        <input type="text" name="name" value="{{ old('name') }}">
     </div>
 
     <div>
         密码
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" value="{{ old('password') }}">
     </div>
 
     <div>
