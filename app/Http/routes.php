@@ -54,6 +54,9 @@ Route::group(['prefix'=>'Admin','namespace' => 'Admin'],function(){
 	Route::get('logout','UserController@getLogout');
 	Route::get('register','UserController@getRegister');
 	Route::post('register','UserController@postRegister');
+	Route::get('testadmin','TestController@testAdmin');
+	Route::get('overZero','TestController@overZero');
+
 });
 // 认证路由...
 Route::get('login', 'Auth\AuthController@getLogin');
