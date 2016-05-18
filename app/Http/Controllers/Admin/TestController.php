@@ -21,6 +21,7 @@ class TestController extends Controller
 		return view('layouts/child');
 	}
 
+<<<<<<< HEAD
 	public function testAdmin(){
 		return \Response::json($this->adminUser->all());
 	}
@@ -28,5 +29,9 @@ class TestController extends Controller
 	public function overZero(){
 		$this->adminUser->pushCriteria(new LoginNumOverZero());
 		return \Response::json($this->adminUser->all());
+=======
+	public function test(){
+		dd('test');
+>>>>>>> origin/master
 	}
 }

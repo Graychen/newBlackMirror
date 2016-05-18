@@ -5,9 +5,20 @@ namespace App\Http\Controllers\Admin;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 class UserController extends Controller
 {
+	protected $guard = 'admin';
+	protected $redirectPath ='/profile';
 
+	public function __construct(){
+		$this->middleware('auth');
+	}
+
+	public function profile(Request $request){
+		$user = $request->user();
+		echo $user['name'].'登录成功！';
+	}
 	/**
 	 * 显示登录
 	 * @return [type] [description]
@@ -27,20 +38,14 @@ class UserController extends Controller
 	 * 登录验证
 	 * @return [type] [description]
 	 */
-	public function postLogin(){}
+	public function postLogin(Request $request){
+		//dd($request->input('name'));
+		dd(hash('md5',$request->input('password')));
+	}
 	/**
 	 * 退出登陆
 	 * @return [type] [description]
 	 */
 	public function getLogout(){}
-	/**
-	 * 注册页面
-	 * @return [type] [description]
-	 */
-	public function getRegister(){}
-	/**
-	 * 注册过程
-	 * @return [type] [description]
-	 */
-	public function postRegister(){}
+
 }
