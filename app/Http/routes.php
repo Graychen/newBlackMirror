@@ -53,16 +53,13 @@ Route::group(['prefix'=>'Admin','namespace' => 'Admin','middleware'=>'password']
 	Route::get('login','UserController@getLogin');
 	Route::post('login','UserController@postLogin');
 	Route::get('logout','UserController@getLogout');
-<<<<<<< HEAD
 	Route::get('register','UserController@getRegister');
 	Route::post('register','UserController@postRegister');
 	Route::get('testadmin','TestController@testAdmin');
 	Route::get('overZero','TestController@overZero');
 
-=======
 	Route::post('profile','UserController@profile');
 	Route::get('home', 'HomeController@index');
->>>>>>> origin/master
 });
 // 认证路由...
 Route::get('login', 'Auth\AuthController@getLogin');
